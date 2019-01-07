@@ -71,3 +71,33 @@ def not_string(str):
         return str
     else:
         return "not" + str
+
+def missing_char(str, n):
+    """
+    Given a non-empty string and an int n, return a new string
+    where the char at index n has been removed.
+    The value of n will be a valid index of a char in the original string.
+    """
+    if n<=len(str):
+        str = str.replace(str[n], "")
+        return str
+    
+def front_back(str):
+    """    
+    Given a string, return a new string where the first and last chars have been exchanged.
+    """
+    if len(str)<=1:
+        return str
+    mid = str[1:-1]
+    return str[-1] + mid + str[0]
+
+def front3(str):
+    """
+    Given a string, we'll say that the front is the first 3 chars of the string. 
+    If the string length is less than 3, the front is whatever is there. 
+    Return a new string which is 3 copies of the front.
+    """
+    if len(str)<4:
+        return 3*str
+    else:
+        return 3*str[:3]
