@@ -38,3 +38,28 @@ def parrot_trouble(talking, hour):
     Return True if we are in trouble.
     """
     return talking and hour not in range(7,21)
+
+def makes10(a,b):
+    """
+    Given 2 ints, a and b, return True if one if them is 10 or if their sum is 10.
+    """
+    return a==10 or b==10 or a+b==10
+
+def near_hundred(n):
+    """
+    Given an int n, return True if it is within 10 of 100 or 200. Note: abs(num) computes the absolute value of a number.
+    """
+    return abs(n-100)<=10 or abs(n-200)<=10
+
+def pos_neg(a,b,negative):
+    """
+    Given 2 int values, return True if one is negative and one is positive. 
+    Except if the parameter "negative" is True, then return True only if 
+    both are negative.
+    """
+    if negative:
+        return (a<0 and b<0)
+    else:
+        return (a<0 and b<0) or (a>0 and b<0)
+    
+def 
