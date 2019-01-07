@@ -8,7 +8,6 @@ def sleep_in(weekday, vacation):
         return True
     else:
         return False
-
     
 def monkey_trouble(a_smile, b_smile):
     """
@@ -17,3 +16,10 @@ def monkey_trouble(a_smile, b_smile):
     of them is smiling. Return True if we are in trouble. 
     """
     return a_smile == b_smile
+
+def sum_double(a, b):
+    """
+    Given two int values, return their sum. Unless the two values are the same, then return double their sum.
+    """
+    return a+b if a!=b else 2*(a+b)
+
