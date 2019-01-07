@@ -19,7 +19,22 @@ def monkey_trouble(a_smile, b_smile):
 
 def sum_double(a, b):
     """
-    Given two int values, return their sum. Unless the two values are the same, then return double their sum.
+    Given two int values, return their sum. Unless the two values are the same,
+    then return double their sum.
     """
     return a+b if a!=b else 2*(a+b)
 
+def diff21(n):
+    """
+    Given an int n, return the absolute difference between n and 21, except return 
+    double the absolute difference if n is over 21.
+    """
+    return 2*(n-21) if n>21 else 21-n
+
+def parrot_trouble(talking, hour):
+    """
+    We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23.
+    We are in trouble if the parrot is talking and the hour is before 7 or after 20. 
+    Return True if we are in trouble.
+    """
+    return talking and hour not in range(7,21)
